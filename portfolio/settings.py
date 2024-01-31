@@ -126,3 +126,8 @@ STATIC_ROOT = Path(BASE_DIR / 'static')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = 'media/'
 MEDIA_ROOT = Path(BASE_DIR / 'media')
+
+try:
+    from .local_settings import *
+except ImportError:
+    print('Looks like no local file. You must be on PROD')
