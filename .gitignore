@@ -4,4 +4,7 @@
 __pycache__/
 local_settings.py
 /static/
+<<<<<<< HEAD
 /venv/
+=======
+>>>>>>> 0dd6eef6a8b2cec510059efb723dc055689307db

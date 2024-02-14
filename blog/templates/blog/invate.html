@@ -1,32 +1,32 @@
 
-    {% load static %}
-    <link href="{% static 'portfolio/styles.css' %}" rel="stylesheet"/>
-    
-    <body>
-        <div class="container">
-            <div>
-                <h1 class="header_text">Пойдешь гулять со мной?</h1>
-            </div>
-            <div class="gif_container">
-                <img src="https://i.postimg.cc/CKfWDG6j/first.gif">
-            </div>
-            <div class="buttons">
-                <button class="btn" id="yesButton" onclick="nextPage()">Да</button>
-                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">Нет</button>
-                <script>
-                    function nextPage() {
-                        window.location.href = "yes";
-                    }
+{% load static %}
+<link href="{% static 'portfolio/styles.css' %}" rel="stylesheet"/>
 
-                    function moveButton() {
-                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
-                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
-                        document.getElementById('noButton').style.left = `${x}px`;
-                        document.getElementById('noButton').style.top = `${y}px`;
-                    }
-                </script>
-            </div>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Подпишешься на меня?</h1>
         </div>
-    </body>
+        <div class="gif_container">
+            <img src="https://i.postimg.cc/CKfWDG6j/first.gif">
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">Да</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">Нет</button>
+            <script>
+                function nextPage() {
+                    window.location.href = "yes";
+                }
+
+                function moveButton() {
+                    var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+                    var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+                    document.getElementById('noButton').style.left = `${x}px`;
+                    document.getElementById('noButton').style.top = `${y}px`;
+                }
+            </script>
+        </div>
+    </div>
+</body>
 </html>
 

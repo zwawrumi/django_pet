@@ -16,7 +16,7 @@
 
   <link rel="icon" type="image/png" href="{% static "portfolio/Logo.png" %}">
 
-  <title>Galya Kosyak</title>
+  <title>Ksenia Maloid</title>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
     <div class="container">
       <a class="navbar-brand" href="{% url 'home' %}">
         <img src="{% static "portfolio/Logo.png" %}" width="30" height="30" class="d-inline-block align-top" alt="Nick's Logo">
-        <span>Galya Kosyak</span>
+        <span>Ksenia Maloid</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -35,14 +35,19 @@
           <li class="nav-item">
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.instagram.com/galochkkkka/" target="_blank">Instagram</a>
+            <a class="nav-link" href="https://boosty.to/meowuch/" target="_blank">Boosty :3</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://vk.com/ssilenntiumm" target="_blank">VK</a>
+            <a class="nav-link" href="https://vk.com/meowuchii" target="_blank">VK</a>
           </li>
-          <li>
-            <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>
-          </li>
+          <li class="nav-item">
+    <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary mb-2 mb-md-0">Blog</a>
+</li>
+<li class="nav-item ml-2">
+    <a role="button" href="{% url 'blog:invate' %}" class="btn btn-primary mb-2 mb-md-0">Invitation</a>
+</li>
+
+
         </ul>
       </div>
     </div>
